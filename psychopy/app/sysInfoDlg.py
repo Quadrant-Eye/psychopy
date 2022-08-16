@@ -133,13 +133,6 @@ class SystemInfoDialog(wx.Dialog):
         except Exception:
             outputText += self.getLine(' '*8, 'PyGLFW [not installed]')
 
-        # sound related
-        try:
-            import pyo
-            outputText += self.getLine(
-                ' '*8, "pyo", ('%i.%i.%i' % pyo.getVersion()))
-        except Exception:
-            outputText += self.getLine(' '*8, 'pyo [not installed]')
         try:
             import psychtoolbox
             outputText += self.getLine(' '*8, "psychtoolbox ({})".format(

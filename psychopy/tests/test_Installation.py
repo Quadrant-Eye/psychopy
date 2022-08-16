@@ -36,7 +36,6 @@ def test_extra_imports():
     import pyglet
     assert pyglet.media.have_avbin
     import serial
-    import pyo
     #specific hardware libs
     import egi
     try:

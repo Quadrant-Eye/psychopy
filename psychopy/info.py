@@ -383,10 +383,6 @@ class RunTimeInfo(dict):
         except ImportError:
             self['systemSec.pythonSSL'] = False
 
-        # pyo for sound:
-            import importlib.util
-            if importlib.util.find_spec('pyo') is not None:
-                self['systemPyoVersion'] = '-'
 
         # flac (free lossless audio codec) for google-speech:
         flacv = ''
